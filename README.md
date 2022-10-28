@@ -41,3 +41,6 @@ Next time you refresh your page, the Scraper gets news again and appends them if
 
 
 Simple scrape + serve to an API done! :)
+
+![image](https://user-images.githubusercontent.com/108484798/198714195-2b06bc28-60be-4e7e-8e46-3e96bfc02271.png)
+
