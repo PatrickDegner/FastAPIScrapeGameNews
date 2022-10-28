@@ -12,7 +12,6 @@ def scrape():
     articles = soup.find_all('article')
 
     df_new = pd.DataFrame(columns=['update_timestamp', 'title', 'news'])
-
     for article in articles:
         datetime = article.find('span', class_='alice-datetime').text
         title = article.find('h2').text
@@ -32,9 +31,9 @@ def scrape():
         df_new = df_new.append(df_old, ignore_index=True)
         df_new = df_new.drop_duplicates(subset=['title'])
         df_new.to_csv('giga_news.csv', index=False)
-        print('New articles found and appended to csv')
+        print('new news found and got appended to csv...')
     else:
-        print('no new articles')
+        print('no new news found... skipping...')
 
 if __name__ == '__main__':
     scrape()
