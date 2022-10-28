@@ -25,6 +25,7 @@ Now you should see something like this:
 ![image](https://user-images.githubusercontent.com/108484798/198712820-27338b8a-c029-4369-9236-2d787fa42289.png)
 
 Go to the localhost link (thats your PC) and check out the news
+
 ![image](https://user-images.githubusercontent.com/108484798/198712971-57b10d1d-4035-4a51-be7d-8e95bdfe8a3a.png)
 
 
