@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>News</title>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>update_timestamp</th>
+                <th>title</th>
+                <th>news</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in request.iterrows() %}
+            <tr>
+                <td>{{ row[1]['update_timestamp'] }}</td>
+                <td>{{ row[1]['title'] }}</td>
+                <td>{{ row[1]['news'] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
