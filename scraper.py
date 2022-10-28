@@ -1,3 +1,4 @@
+from genericpath import exists
 import requests
 from bs4 import BeautifulSoup
 import pandas as pd
@@ -20,6 +21,8 @@ def scrape():
                         'title': title, 'news': text}, ignore_index=True)
 
     df_new['update_timestamp'] = pd.to_datetime(df_new['update_timestamp'])
+    if not exists('giga_news.csv'):
+        df_new.to_csv('giga_news.csv', index=False)
 
     df_old = pd.read_csv('giga_news.csv')
     df_old['update_timestamp'] = pd.to_datetime(df_old['update_timestamp'])
