@@ -1,5 +1,5 @@
 # FastAPIScrapeGameNews
-Small scraping project for news of a german gaming website www.giga.de
+Simple scraping project for news of a german gaming website www.giga.de
 
 ## Tools used
 - BeautifulSoup
