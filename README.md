@@ -1,5 +1,5 @@
 # FastAPIScrapeGameNews
-Small scraping project for news of the germany gaming website www.giga.de
+Small scraping project for news of a german gaming website www.giga.de
 
 ## Tools used
 - BeautifulSoup
@@ -32,8 +32,12 @@ Go to the localhost link (thats your PC) and check out the news
 
 ## How it works:
 BeautifulSoup gets us the infos needed.
+
 Then we go after the attributes to find specific informations of date title and news.
+
 The news are read into a Pandas DataFrame and saved to csv.
+
 Next time you refresh your page, the Scraper gets news again and appends them if there are new news.
+
 
 Simple scrape + serve to an API done! :)
